@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color:black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sidebar{
+    background-color: lightblue;
+    width: 18vw;
+    height: 100vh;
+    font-family: sans-serif
+}
+
+.sidebar nav{
+    padding: 45px;
+    
+}
+
+.sidebar nav li{
+    padding: 33px;
+    list-style: none;
+    font-size: 30px;
+}
+
+.sidebar nav li a{
+ text-decoration: none;
+ color: black;
+}
+.grid{
+    display: grid;
+    grid-gap: 45px;
+    width: 1260px;
+    padding: 100px 20px;
+    align-items: start;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+}
+.grid-item{
+    background-color: black;
+    overflow: hidden;
+    box-shadow: 0 200px 200px black;
+    border-radius: 75px;
+    transition: 0.2s;
+    cursor: pointer;
+    width: 400px;
+    height: 580px;
+
+}
+
+.grid-item:hover{
+    box-shadow: 0 64px 128px black;
+    transform: translate(-0.5%);
+}
+
+.card-img{
+    width: 400px;
+    height: 479px;
+    display: block;
+    object-fit: cover;
+    padding: 0;
+}
+
+.card-content{
+    padding: 30px;
+}
+.card-header{
+    font-weight: 500;
+    color: black;
+    font-size: 30px;
+    margin-left: 65px;
+    margin-bottom: 15px;
+}
+.card-text{
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 20px;
+    color: brown;
+    margin-bottom: 25px;
+}
+.card-btn{
+    display: block;
+    padding: 15px;
+    width: 100%;
+    font-size: 20px;
+    color: antiquewhite;
+    text-align: center;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    letter-spacing: 1.6px;
+
+}
+.card-btn span{
+    transition: 0.2s;
+    margin-left: 16px;
+}
+
+.card-btn:hover, .card-btn:active{
+    background-color: lightblue;
+}
+
+@media only screen and (max-width:60em){
+    .grid{
+        grid-gap: 48px;
+    }
+}
+
+.container{
+    display: flex;
+}
+
+
+.header.text{
+    font-size: 45px;
+    color: green;
+    margin-left: 800px;
+    margin-top: -345%;
+}
